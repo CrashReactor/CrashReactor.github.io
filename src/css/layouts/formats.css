@@ -1,0 +1,178 @@
+/*
+
+
+[ FORMATS ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    formats.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure..................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $First-block................The first and second blocks are both
+    [2] $Second-block...............centered by margin auto to horizontally center.
+
+  * $MINOR-COMPONENTS
+    [3] $Wrapper-format.............The wrapper is floated to the left side.
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* FORMATS 
+  + CONTAINER 
+    + FIRST-BLOCK
+      - module-horizontal-toggle
+    + SECOND-BLOCK
+      + wrapper-format
+        - format
+
+
++-------------------------+
+|         FORMATS         |        
+|  +-------------------+  |
+|  |     CONTAINER     |  |         
+|  | +---------------+ |  |
+|  | |  FIRST-BLOCK  | |  |
+|  | +---------------+ |  | 
+|  | +---------------+ |  | 
+|  | |  SECOND-BLOCK | |  |
+|  | +---------------+ |  |
+|  +-------------------+  |
++-------------------------+
+
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+.formats {
+  padding : 50px 0px;
+  clear  : both;
+}
+  
+  /* $First-block */
+  .formats .first-block {
+    width  : 380px;
+    margin : 25px auto 125px auto; /* [1] */
+  }
+
+  /* $Second-block */
+  .formats .second-block {
+    width    : 97%;
+    margin   : 0px auto 25px auto; /* [2] */
+
+    clear    : both;
+    overflow : hidden;
+  }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Wrapper-format */
+.wrapper-format {
+  width   : 315px;
+  float   : left; /* [3] */
+  cursor  : pointer;
+
+  margin-right : 22px;
+}
+
+.wrapper-format-last {
+  margin-right : 0px;
+}
+
+.formats .is-clicked {
+  border : 2px solid orange;
+}
+
+  .format {
+    width : 310px;
+  }
+
+    .format__title {
+      padding       : 25px 0;
+      margin-bottom : 3px;
+
+      background-color : white;
+    }
+
+    .format__main {
+      background-color : white;
+    }
+
+      .format__main-title {
+        padding-top    : 12.5px;
+        padding-bottom : 12.5px;
+      }
+
+      .format__main-image {
+        margin  : 0 auto;
+        display : block;
+      }
+
+      .format__main-text {
+        padding : 0px 25px 25px 25px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

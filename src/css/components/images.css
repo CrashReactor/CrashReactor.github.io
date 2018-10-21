@@ -1,0 +1,227 @@
+/*
+
+
+[ IMAGES ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    images.css
+Description:    Loading and styling images.
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $Name ).
+
+  IMAGES
+    $Body is a background image for using parallax scrolling.
+    $About and Benefits are using as background images also 
+    their containers are using as shadows for small forms.
+    $Working is a background image as radial-gradient.
+    $Formats is a background image.
+    $Coverage area is a background image of footer-site.
+    $Icons of checkboxes.
+
+    
+*/
+
+
+
+
+/* $Body */
+body {
+  background          : url(../../images/jpg/backg/introBg.jpg) fixed;
+  background-position : center;
+  background-size     : cover;
+  background-repeat   : no-repeat;
+}
+
+
+
+
+/* $About and Benefits */
+.benefits { background-image : url(../../images/jpg/backg/benefitsBg.jpg);} 
+.about    { background-image : url(../../images/jpg/backg/aboutBg.jpg); }
+
+.benefits,
+.about {
+  background-position : center center;
+  background-repeat   : no-repeat; 
+  background-size     : cover;
+}
+
+.benefits .container,
+.about .container  {
+  background-image    : url(../../images/png/shadowBorder.png);
+  background-position : right;
+  background-repeat   : repeat-y; 
+  background-size     : 330px;
+}
+
+
+
+
+/* $Working */
+.working {
+  background-image : -webkit-radial-gradient(
+    center, ellipse farthest-corner, #FFFFFF 0%, #E0E0E0 100%  );
+  background-image : -moz-radial-gradient(
+    center, ellipse farthest-corner, #FFFFFF 0%, #E0E0E0 100%  );
+  background-image : -ms-radial-gradient(
+    center, ellipse farthest-corner, #FFFFFF 0%, #E0E0E0 100%  );
+  background-image : -o-radial-gradient(
+    center, ellipse farthest-corner, #FFFFFF 0%, #E0E0E0 100%  );
+  background-image : radial-gradient(
+    ellipse farthest-corner at center, #FFFFFF 0%, #E0E0E0 100%);
+}
+
+
+
+
+/* $Formats */ 
+.formats {
+  background          : url(../../images/jpg/backg/formatsBg.jpg);
+  background-position : top;
+  background-repeat   : no-repeat;
+  background-size     : cover;
+}
+
+
+
+
+/* $Coverage area */
+.coverage-area {
+  background-image    : url(../../images/jpg/backg/coverageAreaBg.jpg);
+  background-position : center center;
+  background-size     : cover;
+  background-repeat   : no-repeat;
+}
+
+
+
+
+/* $Icons */
+.last-icon                   { margin-right : 0px;  }
+label[for="minibus"]    img  { margin-left  : 6px;  }
+label[for="trolleybus"] img  { margin-left  : 20px; } 
+label[for="tram"]       img  { margin-left  : 15px; }
+img.last                     { margin-right : 0px !important; }
+
+.checkboxes img {
+  display       : block;
+  margin-bottom : 10px;
+  cursor : pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

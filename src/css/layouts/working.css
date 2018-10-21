@@ -1,0 +1,375 @@
+/*
+
+
+[ WORKING ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    working.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure.....................The major & minor scheme of the module.
+
+  * MAJOR-COMPONENTS
+    [1] $Content.......................It has orange border.
+    [2] $Wrappers......................The wrappers are centered by margin auto to 
+                                       horizontally center.
+
+  * MINOR-COMPONENTS
+    [3] $work-scheme-first.............The first is floated to the left side.
+    [4] $work-scheme-second............The second is displayed by property inline-block.
+    [5] $work-scheme-third.............The third is floated to the right side.
+    [6] $Dashed-toggle__button.........The buttons are centered by margin auto to 
+                                       horizontally center.
+    [7] $Total-sum.....................It has cleared both sides.
+    [8] $Stages-processes__column......Each column are floated to the left side.
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* HEADER-SITE 
+  + CONTAINER 
+    + CONTENT
+      + wrapper-work-scheme
+        - work-scheme
+      + wrapper-dashed-toggle
+        - dashed-toggle
+      + wrapper-total-sum
+        - total-sum
+      + wrapper-stages-processes 
+        - stages-processes 
+
+
++---------------------------------------+
+|                WORKING                |
+| +-----------------------------------+ |
+| |             CONTAINER             | |
+| | +-------------------------------+ | |
+| | |            CONTENT            | | |
+| | | +---------------------------+ | | |
+| | | |    WRAPPER-WORK-SCHEME    | | | |
+| | | +---------------------------+ | | |
+| | | +---------------------------+ | | |
+| | | |   WRAPPER-DASHED-TOGGLE   | | | |
+| | | +---------------------------+ | | |
+| | | +---------------------------+ | | |
+| | | |     WRAPPER-TOTAL-SUM     | | | |
+| | | +---------------------------+ | | |
+| | | +---------------------------+ | | |
+| | | |  WRAPPER-STAGES-PROCESSES | | | |
+| | | +---------------------------+ | | |
+| | +-------------------------------+ | |
+| +-----------------------------------+ |
++---------------------------------------+
+
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+.working {
+  padding : 75px 0px 50px 0px;
+  clear   : both;
+}
+
+  /* $Content */
+  .working .content {
+    padding-top : 25px;
+    margin-top  : 25px;
+    overflow    : hidden;
+    border      : 4px solid orange; /* [1] */
+  }
+
+    /* $Wrappers */
+    .wrapper-work-scheme,
+    .wrapper-dashed-toggle,
+    .wrapper-total-sum,
+    .wrapper-stages-processes {
+      padding  : 25px 0px;
+      margin   : 0 auto; /* [2] */
+      clear    : both;
+      overflow : hidden;
+    }
+    
+    .wrapper-work-scheme { 
+      width : 700px; 
+    }
+
+    .wrapper-total-sum { 
+      width : 900px; 
+    }
+
+    .wrapper-stages-processes { 
+      width: 1000px;
+      padding-bottom: 30px;
+    }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+.work-scheme-first {
+  float : left; /* [3] */
+}
+
+.work-scheme-second {
+  display: inline-block; /* [4] */
+}
+
+.work-scheme-third {
+  float : right; /* [5] */
+}
+
+  .work-scheme__arrow {
+    width   : 140px;
+    display : inline-block;
+    margin-top : 150px;
+  }
+
+    .work-scheme__image {
+      width   : 155px;
+      display : block;
+      margin  : 0 auto;
+    }
+
+    .work-scheme__text {
+      margin-top : 25px;   
+    }
+
+
+
+
+/* $Dashed-toggle__button */
+.dashed-toggle__button {  
+  margin : 0 auto; /* [6] */
+
+  border        : none;
+  border-bottom : 2px dashed orange;
+  cursor        : pointer;
+
+  background    : transparent;
+}
+
+
+
+
+/* $Total-sum */
+.total-sum {  
+  clear : both; /* [7] */
+}
+
+  .total-sum__section {
+    width   : 33%;
+    display : inline-block;
+  }
+
+    .total-sum__text {
+      position : relative;
+      top      : -15px;
+      left     : 130px;
+    }
+ 
+
+
+
+/* $Stages-processes__column */
+.stages-processes__column { 
+  float : left;  /* [8] */
+}
+
+  .stages-processes__wrapper {
+    width       : 125px;
+    display     : inline-block;
+    margin-left : 16px;
+  }
+
+  .stages-processes__wrapper-first { 
+    float : left;
+  }
+
+  .stages-processes__wrapper-second   { 
+    float : right;
+  }
+
+    .stages-processes__icon {
+      width   : 97px;
+      display : block;
+      margin  : 0 auto;
+    }
+
+    .stages-processes__stage {
+      position : relative;
+      top      : 55px;
+      width    : 10px;
+      margin   : 0 auto;
+    }
+
+    .stages-processes__text {
+      padding-top : 12.5px;
+    }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

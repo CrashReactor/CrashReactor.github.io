@@ -1,0 +1,174 @@
+/*
+
+
+[ ABOUT AND BENEFITS ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    aboutAndBenefits.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure.....................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $First-block...................The article is floated to the left side.
+    [2] $Second-block..................The aside is floated to the right side.
+
+  * $MINOR-COMPONENTS
+    [3] $Paragraph.....................Each paragraph is floated to the left.
+    [4] $Wrapper-module-small-form.....The wrapper has margin auto to horizontally center.
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* ABOUT 
+  + CONTAINER 
+    + FIRST-BLOCK
+      - content
+    + SECOND-BLOCK
+      - wrapper-module-small-form
+
++----------------------------------------+
+|                 ABOUT                  |
+|  +----------------------------------+  |
+|  |            CONTAINER             |  |
+|  | +-------------+ +--------------+ |  |
+|  | | FIRST-BLOCK | | SECOND-BLOCK | |  |
+|  | +-------------+ +--------------+ |  |
+|  +----------------------------------+  |
++----------------------------------------+
+
+* BENEFITS 
+  + CONTAINER 
+    + FIRST-BLOCK
+      + content
+        - paragraph
+    + SECOND-BLOCK
+      - wrapper-module-small-form
+
++----------------------------------------+
+|                BENEFITS                |
+|  +----------------------------------+  |
+|  |            CONTAINER             |  |
+|  | +-------------+ +--------------+ |  |
+|  | | FIRST-BLOCK | | SECOND-BLOCK | |  |
+|  | +-------------+ +--------------+ |  |
+|  +----------------------------------+  |
++----------------------------------------+
+
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+ .about    .container,
+ .benefits .container {
+  padding  : 60px 0px;
+  overflow : hidden;
+} 
+
+  /* $Benefits-article */
+  .about    .first-block,
+  .benefits .first-block  {
+    width : 65%;
+    float : left; /* [1] */
+  }
+
+  /* $Benefits-aside */
+  .about    .second-block,
+  .benefits .second-block  {
+    width : 32.5%;
+    float : right; /* [2] */  
+  }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+ 
+.about    .content,
+.benefits .content {
+  clear : both;
+}
+
+  .content__logo {
+    width : 134px; 
+  	padding-bottom : 12.5px;
+  }
+
+  .content__title {
+    padding-bottom : 50px;
+  }
+
+  .content__text {
+    width          : 605px;
+    padding-bottom : 25px;
+  }
+
+  .content__text-last {
+    padding-bottom : 0px;
+  }
+
+  /* $Paragraph */
+  .paragraph {
+    width   : 330px;
+    display : inline-block;
+    float   : left;  /* [3] */
+  }
+
+    .paragraph__number {
+      float : left;
+    }
+
+    .paragraph__text {
+      width : 240px;
+      float : left;
+
+      margin-left    : 10px;
+      padding-bottom : 25px;
+    }
+
+
+
+
+/* $Wrapper-module-small-form */
+.wrapper-module-small-form {
+  width  : 260px;
+  margin : 25px auto 0px auto;  /* [4] */
+}
+
+ 
+

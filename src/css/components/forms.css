@@ -1,0 +1,154 @@
+/*
+
+
+[ FORMS ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    forms.css
+Description:    Stylesheets for a big form of calculation.
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $Name ).
+
+  FORM'S ELEMENTS
+    $Fieldset has reseted their styles.
+    $Radio buttons are placed in a field ".radio-buttons".
+    $Select is placed in a field ".select-city".
+    $Textarea is placed in ".second-block".
+    $Labels.
+
+    
+*/
+
+
+
+
+/*------------------------------------*\
+    $STYLESHEETS FOR BIG FORM 
+\*------------------------------------*/
+ 
+/* $Fieldset */
+fieldset {
+  padding : 0px;
+  border  : none;
+}
+
+
+
+/* $Radio */
+.radio-buttons {
+  width   : 170px;
+  display : block;
+  float   : left;
+
+  margin-top : 10px;
+}
+
+input[type="radio"] {
+  display : block;
+  float   : left;
+  clear   : both;
+}
+
+
+
+
+/* $Select */
+.select-city {
+  width : 275px;
+  float : right;
+}
+
+select, 
+.big-form input[type="text"] {
+  width   : 100%;
+  height  : 35px;
+  display : block;
+
+  margin-bottom : 10px;
+  padding-left  : 10px;
+
+  border : 1px solid #dfdfdf;
+
+  background : transparent;
+}
+
+input#city {
+  margin-bottom : 30px;
+}
+
+
+
+
+/* $Textarea */
+textarea {
+  width   : 100%;
+  height  : 304px;
+  display : block;
+  clear   : both;
+
+  margin-top : 12.5px;
+  padding    : 10px;
+ 
+  border : 1px solid #dfdfdf;
+}
+
+
+
+
+/* $Labels */
+.radio-buttons label {
+  display : block;
+  float   : left;
+  margin-left : 20px;
+}
+
+.checkboxes label {
+  float        : left;
+  margin-right : 40px;
+}
+
+.checkboxes .last-label {
+  margin-top   : 3px;
+  margin-right : 0;
+}
+
+.calculation .second-block label {
+  display : inherit;
+}
+
+.calculation .third-block label {
+  display    : inherit;
+  margin-top : 17.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

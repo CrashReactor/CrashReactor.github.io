@@ -1,0 +1,134 @@
+/*
+
+
+[ INTRO ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    intro.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure..................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $Intro......................The block has responsive height.
+    [2] $Second-block...............The block has margin auto to horizontally center.
+
+  * $MINOR-COMPONENTS
+    [3] $Wrapper-servises...........This wrapper is floated to the left side.
+    [4] $Wrapper-servises-last......This wrapper is floated to the right side.
+ 
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* INTRO
+  + CONTAINER
+    + FIRST-BLOCK
+      - headlines
+    + SECOND-BLOCK 
+      - wrapper-servises 
+      - wrapper-servises-last 
+ 
++------------------------+
+|          INTRO         |
+|  +------------------+  |
+|  |     CONTAINER    |  |
+|  | +--------------+ |  |
+|  | |  FIRST-BLOCK | |  |
+|  | +--------------+ |  |
+|  | +--------------+ |  |
+|  | | SECOND-BLOCK | |  |
+|  | +--------------+ |  |
+|  +------------------+  |
++------------------------+
+
+
+*/ 
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Introduction */
+.intro {
+  height: 100vh;  /* [1] */
+}
+
+  /* $Second-block */
+  .intro .second-block {
+    margin : 0 auto;  /* [2] */
+  }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+.headlines__title-primary {
+  padding-top : 50px;
+}
+
+.headlines__title {
+  padding-top : 12px;
+}
+
+.headlines__text {
+  padding: 50px 0px;
+}
+
+
+
+
+/* $Wrapper-servises */
+.intro .wrapper-servises {
+  width : 400px;
+  float : left; /* [3] */
+}
+
+.intro .wrapper-servises-last  {
+  float : right; /* [4] */
+}
+
+  .services {
+    width : 400px;
+  }
+
+    .services__picture {
+      width   : 360px;
+      margin  : 0 auto;
+    }
+
+    .services__title {
+      margin : -45px 0px 25px 0px;
+    }

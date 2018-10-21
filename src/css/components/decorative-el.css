@@ -1,0 +1,350 @@
+/*
+
+
+[ BUTTONS ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    decorative-el.css
+Description:    Stylesheets for decorative elements.
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $Name ).
+
+  DECORATIVE-COMPONENTS
+    $Closer is a button which closes the callback section.
+    $Underline is a horizontal line between two sections: header-site and intro.
+    $Scroller is an animation which shows scrolling the page inside of intro.
+    $Circle are circles which contains numbers.
+    $Pipeline are lines inside of navigation panel after 'a' items.
+    $Plus are pluses above of total-sum__big-number.
+    $Arrows are buttons for switching photos of gallery's sliders.
+    $Range is instead of a input element of type "range".
+    $Measure are marks for the range.
+    $ErrorMessage for form validation.
+
+
+*/
+
+
+
+
+/* $Closer */
+.decorative-closer {
+  width  : 34px;
+  height : 34px;
+  border : 1px solid orange;
+
+  -webkit-border-radius : 50%;
+     -moz-border-radius : 50%;
+          border-radius : 50%;
+}
+
+  .decorative-closer__cross {
+    width  : 100%;
+    height : 100%;
+    cursor : pointer;
+  }
+
+
+
+
+/* $Underline */
+.decorative-underline {
+  padding-top   : 18.5px;
+  border-bottom : #937D58 1px solid; 
+  clear         : both;
+}
+
+
+
+
+/* $Scroller */
+.decorative-scroller {
+  position : absolute;
+  top      : 85%;
+  left     : 0;
+  bottom   : 0;
+  right    : 0;
+
+  width  : 35px;
+  height : 55px;
+  margin : auto;
+
+  border-radius : 80px / 70px;
+  border        : 3px solid;
+}
+
+  .decorative-scroller__animated-tick {
+    width  : 3px;
+    height : 15px;
+    margin : 6px auto 0px auto;
+
+    border-radius    : 25%;
+    background-color : white;
+
+    animation : translating 1s linear infinite;  
+  }
+
+@keyframes translating {
+  100% { transform : translateY(7px); }
+}
+
+
+
+
+/* $Circle */
+.decorative-circle {
+  width   : 58px;
+  height  : 58px;
+  display : inline-block;
+
+  border  : 1px solid;
+
+  -webkit-border-radius : 30px;
+     -moz-border-radius : 30px;
+          border-radius : 30px;
+} 
+
+.benefits .decorative-circle { 
+  border-color : white;   
+}
+
+.calculation .decorative-circle { 
+  border-color : #E9BA82; 
+}
+
+
+
+
+/* $Pipeline */
+.decorative-pipeline {
+  position : relative;
+  left     : 12.5px;
+}
+
+
+
+
+/* $Plus */
+.decorative-plus {
+  position : relative;
+  top      : -23px;
+  left     : 2px;
+}
+
+
+
+
+/* $Arrows */
+.decorative-slider__arrow-left,
+.decorative-slider__arrow-right { 
+  font-size   : 50px;
+  line-height : 1.1em;
+  text-align  : center;
+  color       : #ffffff;
+
+  width      : 1em;
+  height     : 1.25em;
+  margin-top : 210px;
+
+  background-color : #000;
+  opacity          : 0.6;
+}
+
+.decorative-slider__arrow-left:hover,
+.decorative-slider__arrow-right:hover { 
+  opacity : 1;
+}
+
+.decorative-slider__arrow-left {
+  float       : left;
+  margin-left : 25px;
+}
+
+.decorative-slider__arrow-right {
+  float        : right;
+  margin-right : 25px;
+}
+
+
+
+
+/* $Range */
+#range {
+  width       : 265px;
+  height      : 2px;
+  float       : left;
+  margin-left : 70px;
+
+  background-color : #bdc3c7;
+}
+ 
+  .ui-slider-handle {
+    width  : 25px !important;
+    height : 25px !important;
+    top    : -0.8em !important;
+
+    border-radius : 40px !important;
+    border        : none !important;
+    cursor        : pointer !important;
+
+    background-color   : orange !important;
+    -webkit-box-shadow : 4px 3px 14px -4px rgba(0,0,0,1) !important;
+       -moz-box-shadow : 4px 3px 14px -4px rgba(0,0,0,1) !important;
+            box-shadow : 4px 3px 14px -4px rgba(0,0,0,1) !important;
+  }
+
+
+
+
+/* $Measure */
+.decorative-measure {
+  position : relative;
+  left     : 145px;
+
+  width  : 265px;
+  height : 20px;
+
+  margin-top : 35px;
+}
+
+  .min,
+  .max {
+    position : relative;
+    top      : -14px;
+  }
+
+  .min {
+    left : -83px;
+  }
+
+  .max {
+    left : 104px;
+  }
+
+  .left-dot,
+  .right-dot {
+    position : relative;
+    top      : 11px;
+    z-index  : 1;
+
+    width  : 10px;
+    height : 10px;
+
+    display       : inline-block;
+    border-radius : 10px;
+
+    background-color : black;
+
+    -webkit-box-shadow : 3px 3px 5px -2px rgba(0,0,0,0.75);
+       -moz-box-shadow : 3px 3px 5px -2px rgba(0,0,0,0.75);
+            box-shadow : 2px 2px 7px -1px rgba(0,0,0,0.75);
+  }
+
+  .left-dot {
+    left : -108px;
+  }
+
+  .right-dot {
+    left : 124px;
+  }
+
+  .left-tick,
+  .center-tick,
+  .right-tick {
+    position : relative;
+    top      : 5px;
+
+    width   : 2px;
+    display : inline-block;
+
+    background-color : #bdc3c7;
+  }
+
+  .left-tick {
+    height : 5px;
+    left   : -50px;
+  }
+
+  .center-tick {
+    height : 15px;
+    left   : 14px;
+  }
+
+  .right-tick {
+    height : 5px;
+    left   : 70px;
+  }
+
+
+
+
+
+
+
+
+
+/* $ErrorMessage*/
+.errorMessage {
+  position : absolute;
+  
+  padding     : 15px;
+  margin-top  : -40px; 
+  border      : 2px solid red;
+  
+  background-color: red;
+  
+  font-weight : bold;
+  text-align  : center;
+  color       : white;
+}
+
+.errorMessage::before {
+  content : '';
+
+  position : absolute;
+  top      : 100%;
+  left     : 5%;
+
+  width  : 0;
+  height : 0;
+  
+  border-left   : 10px solid transparent;
+  border-right  : 10px solid transparent;
+  border-top    : 10px solid red; 
+  
+  clear: both;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

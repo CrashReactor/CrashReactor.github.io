@@ -1,0 +1,113 @@
+/*
+
+
+[ NAVIGATION ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    navigation.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $Navigation...............The navigation has fixed position.
+ 
+  * $MINOR-COMPONENTS
+    [2] $Menu__item...............Each item is floated to the left.
+    [3] $Menu__item-last..........The last item is floated to the right side.
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* NAVIGATION 
+  + CONTAINER 
+    + MENU 
+      - menu__item 
+      - menu__item-last
+
++------------------------+
+|       NAVIGATION       |
+|  +------------------+  |
+|  |     CONTAINER    |  |
+|  | +--------------+ |  |
+|  | |     MENU     | |  |
+|  | +--------------+ |  |
+|  +------------------+  |
++------------------------+
+
+
+*/ 
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Navigation */
+.navigation {
+  position : fixed; /* [1] */
+  top      : 0;
+  left     : 0;
+  z-index  : 95;
+
+  width   : 100%;
+  padding : 25px 0px 25px 0px;
+
+  background-color   : white;
+
+  -webkit-box-shadow : 0px 4px 10px 0px rgba( 0, 0, 0, 0.34 );
+     -moz-box-shadow : 0px 4px 10px 0px rgba( 0, 0, 0, 0.34 );
+          box-shadow : 0px 4px 10px 0px rgba( 0, 0, 0, 0.34 );
+}
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+.menu {
+  width : 1020px;
+}
+
+  /* $Menu__item */
+  .menu__item {
+    display : block;
+    float   : left; /* [2] */
+    padding-right : 30px;
+  }
+
+  /* $Menu__item-last */
+  .menu__item-last {
+    float : right; /* [2] */
+  }

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Сайт компании Golden Media Group</title>
+    <link rel="stylesheet" href="src/css/master.css">
+    <script src="src/scripts/libraries/jquery-3.3.1.min.js"></script>
+    <script src="src/scripts/libraries/jquery-ui.min.js"></script>
+    <script src="src/scripts/libraries/clipboard.min.js"></script>
+    <script src="src/scripts/js/main.js"></script>
+  </head>
+  <body>
+ 
+
+ 
+
+<!--//// START "CALLBACK" -->  
+    <div class="callback is-hidden">
+      <div class="container">
+        <div class="wrapper-closer">
+          <div class="decorative-closer">
+            <div class="decorative-closer__cross">×</div>
+          </div>  
+        </div>
+        <div class="module-small-form">
+          <div class="module-small-form__header">
+            <h3 class="module-small-form__title">
+              <span class="color-text">Закажите звонок!</span>
+            </h3>
+            <p class="module-small-form__text">
+              Персональный менеджер подберёт 
+              специальное предложение для Вас!
+            </p>
+          </div>
+          
+          <form class="module-small-form__form small-form" action="src/scripts/php/report-small-form.php" method="post">
+            <input class="module-small-form__input" 
+              type="text" name="name" placeholder="Имя">
+            <input class="module-small-form__input" 
+              type="text" name="phone" placeholder="Телефон">
+            <input  class="module-small-form__submit button-normal" 
+              type="submit" name="submit" value="Отправить">
+          </form>
+
+          <div class="module-small-form__footer">
+            <p  class="module-small-form__footer-text">
+              Нам удаётся угадывать Ваши пожелания
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>    
+<!--\\\\ END "CALLBACK" -->  
+
+
+
+
+<!--//// START "HEADER" -->  
+    <header class="header-site" id="header-site">
+      <div class="container">
+        <div class="first-block">
+          <div class="wrapper-logotype">
+            <div class="logotype">
+              <img class="logotype__picture" src="src/images/png/logotype.png" alt="Логотип компании Golden Media Group">
+              <h1 class="logotype__title">
+                Реклама на транспорте 
+                <span class="logotype__title-secondary offset-text">в 94 городах России</span>
+              </h1>
+            </div>
+          </div>
+          <div class="wrapper-email">
+            <div class="email">
+              <img class="email__icon" src="src/images/png/email.png" alt="Иконка электронной почты">
+              <a class="email__link" id="linkEmail" data-clipboard-text="sales@cmg-nsk.ru">sales@cmg-nsk.ru</a>
+              <p class="email__text">Напишите нам в любое время!</p>
+            </div>
+          </div>  
+        </div>
+        <div class="second-block">
+          <div class="wrapper-bell">
+            <div class="bell">
+              <img class="bell__icon" src="src/images/png/bell.png" alt="Иконка количества полученных уведомлений">
+              <span class="bell__scope">+3</span>
+              <div class="wrapper-popup">
+                <div class="popup is-hidden">
+                  <div class="popup__section">
+                    <img class="popup__icon" src="src/images/png/popupIcon.png" alt="">
+                    <div class="popup__message">
+                      <h2 class="popup__title">Lorem ipsum dolor sit amet</h2>
+                      <time class="popup__date" datetime="2018-01-13">13.01.2018</time>
+                      <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do et dolore magna aliqua.
+                      </p>
+                      <button class="button-small">Подробнее</button>
+                    </div>
+                  </div>
+                  <div class="popup__section">
+                    <img class="popup__icon" src="src/images/png/popupIcon.png" alt="">
+                    <div class="popup__message">
+                      <h2 class="popup__title">Lorem ipsum dolor sit amet</h2>
+                      <time class="popup__date" datetime="2017-12-25">25.12.2017</time>
+                      <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do et dolore magna aliqua.
+                      </p>
+                      <button class="button-small">Подробнее</button>
+                    </div>
+                  </div>
+                  <div class="popup__section">
+                    <img class="popup__icon" src="src/images/png/popupIcon.png" alt="">
+                    <div class="popup__message">
+                      <h2 class="popup__title">Lorem ipsum dolor sit amet</h2>
+                      <time class="popup__date" datetime="2017-09-09">09.09.2017</time>
+                      <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do et dolore magna aliqua.
+                      </p>
+                      <button class="button-small">Подробнее</button>
+                    </div>
+                  </div>
+                  <button class="popup__button">Показать всё</button>
+                </div> 
+              </div>  
+            </div> 
+          </div>  
+          <div class="wrapper-phone">
+            <div class="phone">
+              <img class="phone__icon" src="src/images/png/handset.png" alt="Иконка телефонной трубки">
+              <span class="phone__number offset-text">8 (800) 123-80-80</span>
+              <p class="phone__text">Мы всегда рады Вашему звонку!</p>
+            </div>
+          </div> 
+          <div class="wrapper-call"> 
+            <div class="call">
+              <button class="call__button">Закажите звонок</button>
+              <p class="call__text">Перезвоним за 1 минуту!</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </header>
+<!--\\\\ END "HEADER" -->  
+
+
+
+
+<!--//// "INTRODUCTION" -->
+    <div class="intro">
+      <div class="decorative-underline"></div>
+      <div class="container">
+        <div class="first-block">
+          <div class="headlines">
+            <h2 class="headlines__title-primary">Брендирование корпоративного транспорта</h2>
+            <h3 class="headlines__title">
+              Заставьте Ваши автомобили
+              <span class="color-text">работать на максимум!</span>
+            </h3>
+            <p class="headlines__text">
+              Идеально подойдёт, если Ваша цель стать
+              <span class="color-text"> «top of the mind» - БЫТЬ ПЕРВЫМ </span>
+              <span class="offset-text">в списке компаний, которых вспомнит ваш 
+              клиент перед покупкой или рекомендацией!</span>
+            </p>
+          </div>
+        </div>
+        <div class="second-block">
+          <div class="wrapper-servises">
+            <div class="services">
+              <img class="services__picture" src="src/images/png/orangePrint.png" alt="">
+              <h4 class="services__title">Общественный транспорт</h4>
+              <ul class="services__list">
+                <li class="services__item">Автобусы</li>
+                <li class="services__item">Мы уже сделали</li>
+                <li class="services__item">Трамваи</li>
+                <li class="services__item">Маршрутки</li>
+                <li class="services__item"><span class="color-text">Как внутри так и снаружи!</span></li>
+              </ul>
+            </div> 
+          </div>
+          <div class="wrapper-servises wrapper-servises-last">
+            <div class="services">
+              <img class="services__picture" src="src/images/png/orangePrint.png" alt="">
+              <h4 class="services__title">Сервис</h4>
+              <ul class="services__list">
+                <li class="services__item">Любая сложность проекта</li>
+                <li class="services__item">Собственный отдел мониторинга качества</li>
+                <li class="services__item">Фотоотчёты по факту исполнения</li>
+                <li class="services__item">Общественный транспорт</li>
+                <li class="services__item">Реальные скидки до <span class="color-text">40%</span></li>
+                <li class="services__item">"Дорабатываем" за другими агенствами</li>
+                <li class="services__item"><span class="color-text">Гарантия</span> по договору на качество услуг</li>
+              </ul>
+            </div>
+          </div>  
+        </div>
+        <div class="decorative-scroller">
+          <div class="decorative-scroller__animated-tick"></div>
+        </div>
+      </div>
+    </div>
+<!-- \\\\ END "INTRODUCTION" -->
+
+
+
+
+<!--//// START "NAVIGATION" -->
+    <nav id="navigation" class="is-hidden">
+      <div class="container">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#benefits">Почему мы</a>
+            <span class="decorative-pipeline">|</span>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#gallery">Портфолио и отзывы</a>
+            <span class="decorative-pipeline">|</span>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#calculation">Калькулятор</a>
+            <span class="decorative-pipeline">|</span>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">О нас</a>
+            <span class="decorative-pipeline">|</span>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Контакты</a>
+          </li>
+          <li class="menu__item-last">8 (800) 123-45-45</li>
+        </ul>
+      </div>
+    </nav>
+<!--\\\\ END "NAVIGATION" -->
+
+
+
+
+<!--//// START "WORKING" -->
+    <div class="working">
+      <div class="container">
+        <h2>
+          Между Вами и Вашей рекламой - 
+          <span class="color-text">всего 2 шага</span>
+          <span class="offset-text">Мы работает с любым бизнесом</span>
+        </h2>
+        <div class="content">
+          <div class="wrapper-work-scheme">
+            <div class="work-scheme work-scheme-first">
+              <img class="work-scheme__image" src="src/images/png/document.png" alt="">
+              <div class="work-scheme__text">Оформление заявки</div>
+            </div>
+            <div class="work-scheme work-scheme-second">
+              <img class="work-scheme__arrow" src="src/images/png/arrow.png" alt="">
+            </div>  
+            <div class="work-scheme work-scheme-third">
+              <img class="work-scheme__image" src="src/images/png/man.png" alt="">
+              <div class="work-scheme__text">Клиенты из OFFline</div>
+            </div>
+          </div>
+          <div class="wrapper-dashed-toggle">
+            <div class="dashed-toggle">
+              <button class="dashed-toggle__button">Остальное сделаем МЫ</button>
+              <button class="dashed-toggle__button is-hidden">Мы уже сделали</button>
+            </div> 
+          </div>
+          <div class="wrapper-total-sum">
+            <div class="total-sum">
+              <div class="total-sum__section">
+                <span class="total-sum__big-number">
+                  3500<span class="decorative-plus">+</span>
+                </span>
+                <p class="total-sum__text">
+                  Реализованных<span class="offset-text">проектов</span>
+                </p>
+              </div>
+              <div class="total-sum__section">
+                <span class="total-sum__big-number">
+                  30000<span class="decorative-plus">+</span>
+                </span>
+                <p class="total-sum__text">
+                  Наружных<span class="offset-text">поверхностей</span>
+                </p>
+              </div>
+              <div class="total-sum__section">
+                <span class="total-sum__big-number">
+                  100000<span class="decorative-plus">+</span>
+                </span>
+                <p class="total-sum__text">
+                  Внутрисалонных<span class="offset-text">поверхностей</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-stages-processes is-hidden">
+            <div class="stages-processes"> 
+              <div class="stages-processes__column">
+                <div class="stages-processes__wrapper stages-processes__wrapper-first">
+                  <div class="stages-processes__stage">1</div>
+                  <img class="stages-processes__icon" src="src/images/png/circle1.png" alt="">
+                  <p class="stages-processes__text">
+                    Согласование 
+                    <span class="offset-text">маршрутов</span>
+                    <span class="offset-text"> и количество АГТ</span>
+                  </p>
+                </div>
+                <div class="stages-processes__wrapper stages-processes__wrapper-second">
+                  <div class="stages-processes__stage">2</div>
+                  <img class="stages-processes__icon" src="src/images/png/circle2.png" alt="">
+                  <p class="stages-processes__text">
+                    Заключение 
+                    <span class="offset-text">договора</span>
+                  </p>
+                </div>
+              </div>
+              <div class="stages-processes__column">
+                <div class="stages-processes__wrapper stages-processes__wrapper-first">
+                  <div class="stages-processes__stage">3</div>
+                  <img class="stages-processes__icon" src="src/images/png/circle3.png" alt="">
+                  <p class="stages-processes__text">Предоплата/оплата</p>
+                </div>
+                <div class="stages-processes__wrapper stages-processes__wrapper-second">
+                  <div class="stages-processes__stage">4</div>
+                  <img class="stages-processes__icon" src="src/images/png/circle4.png" alt="">
+                  <p class="stages-processes__text">
+                    Согласование 
+                    <span class="offset-text">макета</span>
+                  </p>
+                </div>
+              </div>
+              <div class="stages-processes__column">
+                <div class="stages-processes__wrapper stages-processes__wrapper-first">
+                  <div class="stages-processes__stage">5</div>
+                  <img class="stages-processes__icon" src="src/images/png/circle5.png" alt="">
+                  <p class="stages-processes__text">Изготовление</p>
+                </div>
+                <div class="stages-processes__wrapper">
+                  <div class="stages-processes__stage">6</div>
+                  <img class="stages-processes__icon" src="src/images/png/circle6.png" alt="">
+                  <p class="stages-processes__text">Монтаж</p>
+                </div>
+                <div class="stages-processes__wrapper stages-processes__wrapper-second">
+                  <div class="stages-processes__stage">7</div>
+                  <img class="stages-processes__icon" src="src/images/png/circle7.png" alt="">
+                  <p class="stages-processes__text">
+                    Запуск готового 
+                    <span class="offset-text">АГТ/фотоотчёт</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--\\\\ END "WORKING" -->
+
+
+
+      
+<!--//// START "BENEFITS" -->
+    <section class="benefits">
+      <div class="container">
+        <div class="first-block">
+          <a name="benefits"></a>
+          <div class="content">
+            <h2 class="content__title">
+              <span class="decor-text">Поч</span>ему 
+              <span class="color-text">Мы</span>
+            </h2>
+            <div class="paragraph">
+              <span class="paragraph__number decorative-circle">1</span>
+              <p class="paragraph__text">
+                Опытные монтажные бригады <span class="color-text">Golden Media Group</span>,
+                работают круглосуточно, чтобы Ваша реклама 
+                была смонтирована и демонтирована чётко в срок.
+              </p>
+            </div>
+            <div class="paragraph">
+              <span class="paragraph__number decorative-circle">2</span>
+              <p class="paragraph__text">
+                Мы единственное рекламное агенство из Новосибирска 
+                в Топ-20 в рубрике «Реклама на транспорте» по России
+                РРАР-2016.
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="paragraph">
+              <span class="paragraph__number decorative-circle">3</span>
+              <p class="paragraph__text">
+                Опытные монтажные бригады <span class="color-text">Golden Media Group</span>,
+                работают круглосуточно, чтобы Ваша реклама 
+                была смонтирована и демонтирована чётко в срок.
+              </p>
+            </div>
+            <div class="paragraph">
+              <span class="paragraph__number decorative-circle">4</span>
+              <p class="paragraph__text">
+                Опытные монтажные бригады <span class="color-text">Golden Media Group</span>,
+                работают круглосуточно, чтобы Ваша реклама 
+                была смонтирована и демонтирована чётко в срок.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="second-block">
+          <div class="wrapper-module-small-form">
+            <div class="module-small-form">
+              <div class="module-small-form__header">
+                <h3 class="module-small-form__title">
+                  <span class="color-text">Закажите звонок!</span>
+                </h3>
+                <p class="module-small-form__text">
+                  Персональный менеджер подберёт 
+                  специальное предложение для Вас!
+                </p>
+              </div>
+                
+              <form class="module-small-form__form small-form">
+                <input class="module-small-form__input" 
+                  type="text" name="name" placeholder="Имя">
+                <input class="module-small-form__input" 
+                  type="text" name="phone" placeholder="Телефон">
+                <input  class="module-small-form__submit button-normal" 
+                  type="submit" name="submit" value="Отправить">
+              </form>
+
+              <div class="module-small-form__footer">
+                <p  class="module-small-form__footer-text">
+                  Нам удаётся угадывать Ваши пожелания
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+<!--\\\\ END "BENEFITS" -->
+
+
+
+
+<!--//// START "OUR-CLIENTS" -->
+    <section class="our-clients">
+      <div class="container">
+        <div class="clients-labels">
+          <h2 class="clients-labels__title">
+            Присоединяйтесь 
+            <span class="offset-text">
+              <span class="decor-text">к хо</span>рошей компании 
+              <span class="color-text">наших клиентов</span>
+            </span>
+          </h2>
+          <div class="clients-labels__slot">
+            <img class="clients-labels__label" src="src/images/png/alexfitness2.png" alt="">
+            <img class="clients-labels__label" src="src/images/png/bilayn.png" alt="">
+          </div>
+          <div class="clients-labels__slot">
+            <img class="clients-labels__label" src="src/images/png/redmond1.png" alt="">
+            <img class="clients-labels__label" src="src/images/png/alexfitness2.png" alt="">
+          </div>
+          <div class="clients-labels__slot">
+            <img class="clients-labels__label" src="src/images/png/bilayn.png" alt="">
+            <img class="clients-labels__label clients-labels__label-last" src="src/images/png/redmond1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+<!--\\\\ END "OUR-CLIENTS" -->
+
+
+
+
+<!--//// START "GALLERY" -->
+    <div class="gallery">
+      <div class="container">
+        <a name="gallery"></a>
+        <h2>
+          Примеры и отзывы
+          <span class="offset-text">
+            <span class="decor-text">наш</span>ей работы
+          </span>
+        </h2>
+      </div> 
+      <div class="bus">
+        <div class="first-block">
+          <div class="slider">
+            <div class="decorative-slider">
+              <div class="decorative-slider__arrow-left">‹</div>
+              <div class="decorative-slider__arrow-right">›</div>
+            </div>  
+          </div>  
+        </div> 
+        <div class="second-block">
+          <div class="content">
+            <div class="wrapper-module-horizontal-toggle">
+              <h3>Автобусы</h3>
+              <div class="module-horizontal-toggle">
+                <button class="module-horizontal-toggle__button is-activated">Наружная</button>
+                <button class="module-horizontal-toggle__button is-deactivated">Внутрисалонная</button>
+              </div>
+            </div>
+            <div class="wrapper-control-panel">
+              <div class="control-panel">
+                <div class="control-panel__redmond is-clicked">
+                  <img class="control-panel__icon" src="src/images/png/redmond.png" alt="">
+                  <h5 class="control-panel__title">Redmond</h5>
+                  <p class="control-panel__text">
+                    РК "Управляй чайником Randmond со
+                    <span class="offset-text">смартфона", 2016</span>
+                  </p>
+                </div>
+                <div class="control-panel__alexfitness">
+                  <img class="control-panel__icon" src="src/images/png/alexfitness1.png" alt="">
+                  <h5 class="control-panel__title">AlexFitness</h5>
+                  <p class="control-panel__text">
+                    РК "Скоростной Интернет 3G Билайн прибыл
+                    <span class="offset-text">в Бердск!", 2017</span>
+                  </p>
+                </div>
+                <div class="control-panel__beeline">
+                  <img class="control-panel__icon" src="src/images/png/beeline.png" alt="">
+                  <h5 class="control-panel__title">Beeline</h5>
+                  <p class="control-panel__text">
+                    РК "Alex Fitness проводит акцию до
+                    <span class="offset-text">25 Апреля", 2017</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div> 
+      <div class="minibus">
+        <div class="first-block">
+          <div class="content">
+            <div class="wrapper-module-horizontal-toggle">
+              <h3>Маршрутки</h3>
+              <div class="module-horizontal-toggle">
+                <button class="module-horizontal-toggle__button is-activated">Наружная</button>
+                <button class="module-horizontal-toggle__button is-deactivated">Внутрисалонная</button>
+              </div>
+            </div>
+            <div class="wrapper-control-panel">
+              <div class="control-panel">
+                <div class="control-panel__redmond">
+                  <img class="control-panel__icon" src="src/images/png/redmond.png" alt="">
+                  <h5 class="control-panel__title">Redmond</h5>
+                  <p class="control-panel__text">
+                    РК "Управляй чайником Randmond со
+                    <span class="offset-text">смартфона", 2016</span>
+                  </p>
+                </div>
+                <div class="control-panel__alexfitness is-clicked">
+                  <img class="control-panel__icon" src="src/images/png/alexfitness1.png" alt="">
+                  <h5 class="control-panel__title">AlexFitness</h5>
+                  <p class="control-panel__text">
+                    РК "Скоростной Интернет 3G Билайн прибыл
+                    <span class="offset-text">в Бердск!", 2017</span>
+                  </p>
+                </div>
+                <div class="control-panel__beeline">
+                  <img class="control-panel__icon" src="src/images/png/beeline.png" alt="">
+                  <h5 class="control-panel__title">Beeline</h5>
+                  <p class="control-panel__text">
+                    РК "Alex Fitness проводит акцию до
+                    <span class="offset-text">25 Апреля", 2017</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="second-block">
+          <div class="slider">
+            <div class="decorative-slider">
+              <div class="decorative-slider__arrow-left">‹</div>
+              <div class="decorative-slider__arrow-right">›</div>
+            </div>  
+          </div>
+        </div> 
+      </div>
+      <div class="trolleybus"> 
+        <div class="first-block">
+          <div class="slider">
+            <div class="decorative-slider">
+              <div class="decorative-slider__arrow-left">‹</div>
+              <div class="decorative-slider__arrow-right">›</div>
+            </div>  
+          </div>
+        </div>
+        <div class="second-block">  
+          <div class="content">
+            <div class="wrapper-module-horizontal-toggle">
+              <h3>Троллейбусы и Трамваи</h3>
+              <div class="module-horizontal-toggle">
+                <button class="module-horizontal-toggle__button is-activated">Наружная</button>
+                <button class="module-horizontal-toggle__button is-deactivated">Внутрисалонная</button>
+              </div>
+            </div>
+            <div class="wrapper-control-panel">
+              <div class="control-panel">
+                <div class="control-panel__redmond">
+                  <img class="control-panel__icon" src="src/images/png/redmond.png" alt="">
+                  <h5 class="control-panel__title">Redmond</h5>
+                  <p class="control-panel__text">
+                    РК "Управляй чайником Randmond со
+                    <span class="offset-text">смартфона", 2016</span>
+                  </p>
+                </div>
+                <div class="control-panel__alexfitness">
+                  <img class="control-panel__icon" src="src/images/png/alexfitness1.png" alt="">
+                  <h5 class="control-panel__title">AlexFitness</h5>
+                  <p class="control-panel__text">
+                    РК "Скоростной Интернет 3G Билайн прибыл
+                    <span class="offset-text">в Бердск!", 2017</span>
+                  </p>
+                </div>
+                <div class="control-panel__beeline is-clicked">
+                  <img class="control-panel__icon" src="src/images/png/beeline.png" alt="">
+                  <h5 class="control-panel__title">Beeline</h5>
+                  <p class="control-panel__text">
+                    РК "Alex Fitness проводит акцию до
+                    <span class="offset-text">25 Апреля", 2017</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div> 
+    </div> 
+<!--\\\\ END "GALLERY" -->
+
+
+
+
+<!--//// START "FORMATS" -->
+    <section class="formats">
+      <div class="container">
+        <h2>Форматы <span class="color-text">размещения рекламы</span></h2>
+        <div class="first-block">
+          <div class="module-horizontal-toggle">
+            <button class="module-horizontal-toggle__button is-activated">Наружная</button>
+            <button class="module-horizontal-toggle__button is-deactivated">Внутрисалонная</button>
+          </div> 
+        </div>
+        <div class="second-block">
+          <div class="wrapper-format">
+            <div class="format">
+              <h3 class="format__title">Художественное оформление</h3>
+              <div class="format__main">
+                <h4 class="format__main-title">Площадь: 45 м²</h4>
+                <img class="format__main-image" src="src/images/png/bus3.png" alt="">
+                <p class="format__main-text">
+                  Польностью брендированный автобус — это
+                  крупномасштабная реклама ващего бренда,
+                  которая позволит ярко выделиться в 
+                  конкуретной среде. Дизайн, обыгрывающий
+                  элементы конструкций автобуса(двери, окна,
+                  колёса, борта), способен усилить
+                  эффективность Вашей рекламы в несколько раз.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-format">
+            <div class="format">
+              <h3 class="format__title">Задний борт</h3>
+              <div class="format__main">
+                <h4 class="format__main-title">Площадь: от 1,6 до 6 м²</h4>
+                <img class="format__main-image" src="src/images/png/bus2.png" alt="">
+                <p class="format__main-text">
+                  Самый узнаваемый формат! Множество
+                  клиентов вывели свои бренды на рынок,
+                  используя формат ADback.
+                  ADback — это прямое воздействие на 
+                  аудиторию автомобилистов, а также
+                  пешеходов. Для малого и среднего бюджетов. 
+                  Полное брендирование заднего борта
+                  подходит для креативных и имиджевых
+                  рекламных компаний.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-format wrapper-format-last is-clicked">
+            <div class="format">
+              <h3 class="format__title">Сменный блок</h3>
+              <div class="format__main">
+                <h4 class="format__main-title">Площадь: от 0,5 до 10 м²</h4>
+                <img class="format__main-image" src="src/images/png/bus1.png" alt="">
+                <p class="format__main-text">
+                  Сменные модули — оптимальный формат
+                  для рекламы ретейла. Брендированный
+                  автобус несёт имидж Вашей торговой
+                  марки на улицы города, в то время 
+                  как каждую неделю Вы можете размещать
+                  информацию об акциях, распродажах,
+                  новинках, используя сменные модули.
+                </p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+<!--\\\\ END "FORMATS" -->
+
+
+
+
+<!--//// START "CALCULATION" -->
+    <section class="calculation">
+      <div class="container">
+        <a name="calculation"></a>
+        <h2>
+          А как именно Вы хотите, 
+          <span class="offset-text">
+            чтобы Ваши <span class="color-text">клиенты узнали о Вас?</span>
+          </span>
+        </h2>
+        <p>
+          Чтобы рассчитать стоимость размещения рекламы
+          заполните форму и мы подберём лучшую цену для Вас!
+        </p>
+        <div class="wrapper-big-form">
+          <form class="big-form">
+            <div class="first-block">
+              <div class="choose-city">
+                <span class="decorative-circle">1</span>
+                <div class="container-fields">
+                  <fieldset class="radio-buttons">
+                    <input class="radio-buttons__button" type="radio" name="city" value="1" id="city">
+                    <label for="city">Один город</label>
+                    <input class="radio-buttons__button" type="radio" name="city" value="2" id="cities">
+                    <label for="cities">2 и более города</label>
+                  </fieldset>
+                  <fieldset class="select-city">
+                    <select name="choosingCity" disabled>
+                      <option selected="selected">Выберите город</option>
+                      <option value="Новосибирск">Новосибирск</option>
+                      <option value="Томск">Томск</option>
+                      <option value="Омск">Омск</option>
+                      <option value="Барнаул">Барнаул</option>
+                      <option value="Кемерово">Кемерово</option>
+                      <option value="Новокузнецк">Новокузнецк</option>
+                    </select>
+                    <input type="text" name="cities" disabled>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="choose-vehicle">
+                <span class="decorative-circle">2</span>
+                <div class="container-fields">
+                  <fieldset class="checkboxes">
+                    <label for="bus">
+                      <img src="src/images/png/busPas.png" alt="">
+                      <input type="checkbox" name="bus" id="bus" value="Автобус">
+                      Bus
+                    </label>
+                    <label for="minibus">
+                      <img src="src/images/png/minibusPas.png" alt="">
+                      <input type="checkbox" name="minibus" id="minibus" value="Микроавтобус">
+                      Minibus
+                    </label>
+                    <label for="trolleybus">
+                      <img src="src/images/png/trolPas.png" alt="">
+                      <input type="checkbox" name="trolleybus" id="trolleybus" value="Троллейбус">
+                      Trolleybus
+                    </label>
+                    <label for="tram" class="last-label">
+                      <img class="last-icon" src="src/images/png/tramPas.png" alt="">
+                      <input type="checkbox" name="tram" id="tram" value="Трамвай">
+                      Tram
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="choose-size">
+                <span class="decorative-circle">3</span>
+                <div class="container-fields">
+                  <div class="decorative-measure">
+                    <span class="min">min</span>
+                    <span class="left-dot"></span>
+                    <span class="left-tick"></span>
+                    <span class="center-tick"></span>
+                    <span class="right-tick"></span>
+                    <span class="right-dot"></span>
+                    <span class="max">max</span>
+                  </div>
+                  <fieldset class="range">
+                    <span class="label-range">Охват:</span>
+                    <div id="range" value="3"></div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="own-data">
+                <span class="decorative-circle">4</span>
+                <div class="container-fields">
+                  <fieldset class="name-and-phone">
+                    <input class="own-data-name" type="text" name="calculation-name" placeholder="ФИО">
+                    <input class="own-data-phone" type="text" name="calculation-phone-number" placeholder="Телефон">
+                  </fieldset>
+                  <fieldset class="company-and-email">
+                    <input class="own-data-company" type="text" name="company" placeholder="Компания / Сайт">
+                    <input class="own-data-email" type="text" name="email" placeholder="E-mail">
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <div class="second-block">
+              <label>
+                <span class="color-text">
+                  Дополнительная инофрмация <span class="offset-text">(не обязательно)</span>
+                </span>
+              </label>
+              <textarea name="additional-information"></textarea>
+            </div>
+            <div class="third-block">
+              <input class="button-big submit" type="submit" value="Рассчитать стоимость и сроки">
+              <label>С нами <span class="color-text">Легко и приятно</span> работать!</label>
+            </div>
+          </form> 
+        </div>
+      </div>
+    </section>
+<!--\\\\ END "CALCULATION" -->
+
+
+
+
+<!--//// START "ABOUT" -->
+    <section class="about">
+      <a name="about"></a>
+      <div class="container">
+        <div class="first-block">
+          <div class="content">
+            <img class="content__logo" src="src/images/png/logotype.png" alt="Логотип Golden Media Group">
+            <h2 class="content__title">
+              <span class="decor-text">Наш</span>ему агенству 
+              <span class="color-text">8 лет.</span>
+            </h2>
+            <p class="content__text">
+              Компания Golden Media Group. 
+              Честно. С любовью. Как для себя.<br>
+              Наша основная специализация - делать рекламу, которая работает!
+            </p>
+            <p class="content__text">
+              За это время разработали с нуля тысячи проектов, запустили 
+              рекламу на сотни тысяч километров, выдаи тысячи рекламных 
+              материалов и упаковок.<br> Мы оказываем услуги по созданию и 
+              размещению наружной рекламы в Новосибирске, Барнауле,
+              Кемерове, Новокузнецке, Омске, Томске, а также в любом
+              из 90 городов России, входящих в зону покрытия GMG. Нашей визитной
+              карточкой является транзитная реклама.
+            </p>
+            <p class="content__text content__text-last">
+              Собственные ресурсы  — медианоситель на общественном транспорте
+              и тесное сотрудничество с государственными и крупными частными
+              перевозчиками  — позволяют предлагать клиентам эксклюзиные 
+              условия размещения рекламы.
+            </p>
+          </div>  
+        </div>
+        <div class="second-block">
+          <div class="wrapper-module-small-form">
+            <div class="module-small-form">
+              <div class="module-small-form__header">
+                <h3 class="module-small-form__title">
+                  <span class="color-text">Остались вопросы?</span>
+                </h3>
+                <p class="module-small-form__text">
+                  Задайте их <br>нашему менеджеру
+                </p>
+              </div>
+ 
+              <form class="module-small-form__form small-form">
+                <input class="module-small-form__input" 
+                  type="text" name="name" placeholder="Имя">
+                <input class="module-small-form__input" 
+                  type="text" name="phone" placeholder="Телефон">
+                <input  class="module-small-form__submit button-normal" 
+                  type="submit" name="submit" value="Отправить">
+              </form>
+
+              <div class="module-small-form__footer">
+                <p  class="module-small-form__footer-text">
+                  Нам удаётся угадывать Ваши пожелания!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--\\\\ END "ABOUT" -->
+
+
+
+
+<!--//// START "FOOTER" -->
+    <footer class="footer-site">
+      <a name="contacts"></a>
+      <div class="first-block">
+        <div class="wrapper-map">
+        <!--
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A310301eb6e6ae4a0dcdaa839b02c2bcc1231d67eb8909c133edd8f9e50089c13&amp;source=constructor" frameborder="0" class="map"></iframe>
+        -->
+        </div>
+        <div class="wrapper-contacts">
+          <div class="contacts">
+            <h2 class="contacts__title">
+              Наши 
+              <span class="offset-text">
+                <span class="decor-text">кон</span>такты
+              </span>
+            </h2>
+            <div class="contacts__section">
+              <img class="contacts__icon" src="src/images/png/pointer.png" alt="Иконка метки">
+              <p class="contacts__text">Головной офис компании находится в Новосибирске,</p>
+              <p class="contacts__text">Горский микрорайон, дом 86, первый этаж</p>
+            </div>
+            <div class="contacts__section">
+              <img class="contacts__icon" src="src/images/png/phone.png" alt="Иконка телефона">
+              <p class="contacts__text">+7 (383) 248-80-80</p>
+              <p class="contacts__text">+7 (383) 362-19-49</p>
+            </div>
+            <div class="contacts__section">
+              <img  class="contacts__icon contacts__icon-email" src="src/images/png/mail.png" alt="Иконка письма">
+              <a class="contacts__link" href="mailto:sales@cmg-nsk.ru">
+                sales@cmg-nsk.ru
+              </a>
+              <p class="contacts__text">коммерческий отдел</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="second-block">
+        <div class="coverage-area">
+          <h2 class="coverage-area__title">
+            Зона покрытия 
+            <span class="offset-text">
+              <span class="decor-text">gmg</span>
+            </span>
+          </h2>
+        </div>  
+      </div>
+    </footer>
+<!--\\\\ END "FOOTER" -->
+
+
+
+
+  </body>
+</html>

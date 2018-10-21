@@ -1,0 +1,109 @@
+/*
+
+
+[ CALLBACK ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    callback.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure.....................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $Callback......................It has fixed position and streched on all size 100%.
+    [2] $Container.....................The container has absolute position.
+
+  * $MINOR-COMPONENTS
+    [3] $Wrapper-closer................The wrapper has absolute position.
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* CALLBACK
+  + CONTAINER 
+    - wrapper-closer
+
++--------------------------+
+|         CALLBACK         |
+|  +--------------------+  |
+|  |      CONTAINER     |  |
+|  | +----------------+ |  |
+|  | | WRAPPER-CLOSER | |  |
+|  | +----------------+ |  |
+|  +--------------------+  |
++--------------------------+
+ 
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Callback */
+.callback {
+  position : fixed; /* [1] */
+  top      : 0;
+  bottom   : 0;
+  z-index  : 100;
+
+  width : 100%;
+  background-color : gray;
+}
+
+  /* $Container */
+  .callback .container {
+  	position : absolute; /* [2] */
+  	top      : 0; 
+    left     : 0; 
+    bottom   : 0; 
+    right    : 0;   
+
+    width  : 260px;
+    height : 360px;
+    margin : auto;
+  }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Wrapper-close  */
+.wrapper-closer {
+  position : absolute; /* [3] */
+  top      : -40px;
+  left     : 250px;
+}

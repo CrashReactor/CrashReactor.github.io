@@ -1,0 +1,147 @@
+.gallery {
+  padding-top : 50px;
+  background-color : white; 
+  overflow: hidden;
+}
+
+  .gallery h2 {
+    padding-bottom : 75px;
+  }
+
+    .gallery .first-block,
+    .gallery .second-block {
+      width  : 50%;
+      height : 470px;
+    }
+
+    .gallery .first-block{
+      float : left;
+    }
+
+    .gallery .second-block {
+      float : right; 
+    }
+
+      .slider {
+        width  : 100%;
+        height : 100%;
+        cursor : pointer;
+
+        background-position : center center;
+        background-repeat   : no-repeat; 
+        background-size     : auto;
+      }
+
+      .gallery .content {
+        width : 400px;
+        float : left;
+        
+        margin-left : 45px;
+      }
+
+      .minibus .content {
+        float : right;
+
+        margin-right : 45px;
+        margin-left  : auto;
+      }
+
+
+
+
+
+  .bus .slider {
+    background-image : url(../../images/jpg/slider/bus/redmond/outside/1.jpg);
+  }
+
+  .minibus .slider {
+    background-image : url(../../images/jpg/slider/minibus/alexfitness/outside/1.jpg);
+  }
+ 
+  .trolleybus .slider {
+    background-image : url(../../images/jpg/slider/trolleybus/beeline/outside/1.jpg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery .wrapper-module-horizontal-toggle,
+.gallery .wrapper-control-panel {
+  padding-bottom: 45px;
+}
+
+  .gallery h3 {
+    padding : 50px 0px 25px 0px;
+  }
+
+  .control-panel__redmond,
+  .control-panel__alexfitness,
+  .control-panel__beeline {
+    padding    : 10px 20px;
+    margin-top : 12.5px;
+
+    border     : 1px solid #e7e7e7;
+    cursor     : pointer;
+    clear      : both;
+    overflow   : hidden;
+  }
+
+    .control-panel__icon {
+      float : left;
+    }
+
+    .control-panel__title {
+      float      : right;
+      margin-top : 5px;
+    }
+
+    .control-panel__text {
+      padding-top : 12.5px;
+      clear       : both;
+    }
+
+    .control-panel .is-clicked p {
+      display : block;
+    }
+
+    .control-panel p {
+      display : none;
+    }
+  /* End Control-Panel */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,273 @@
+/*------------------------------------------------------------------
+
+
+[ MASTER ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    master.css
+Description:    Basic settings.
+Version:        1.1
+Сreated:        16/03/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+-------------------------------------------------------------------
+
+[ TABLE OF CONTENTS ]
+
+Use searching by keyword $UPPER or Low.
+
+  * $MASTER-LIST                    
+      $Files-structure.........The directories and files CSS.
+      $Importing-files.........All stylesheet which we need.
+
+  * $RESET
+      $Box-model...............The defaults rules for box-models.
+      $Text-styles.............H1–H6 and p rules.
+      $Other...................ul, li, a, etc.
+ 
+  * $GLOBAL-SETTINGS
+      $Layout-declarations.....Global Styles for body and container.
+ 
+
+-----------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+    $MASTER-LIST
+\*------------------------------------*/
+
+
+/**************************************\
+|css/ 
+|
+|-- |-- master.css
+    |
+    |-- third/
+    |   |-- normalize.css
+    |   |-- jquery-ui.min.css
+    |
+    |-- typography/
+    |   |-- font-families.css
+    |   |-- font-rules.css
+    |   
+    |-- components/
+    |   |-- buttons.css
+    |   |-- images.css
+    |   |-- forms.css
+    |   |-- modules.css
+    |   |-- decorative-el.css
+    |   
+    |-- layouts/
+    |   |-- callback.css
+    |   |-- site-header.css
+    |   |-- popup.css
+    |   |-- intro.css
+    |   |-- navigation.css
+    |   |-- working.css
+    |   |-- aboutAndBenefits.css
+    |   |-- our-clients.css
+    |   |-- gallery.css
+    |   |-- formats.css
+    |   |-- calculation.css
+    |   |-- site-footer.css
+    
+\**************************************/
+
+
+
+/*/
+//--------------------------------------
+// Third stylesheets
+//--------------------------------------
+/*/
+@import "third/normalize.css";
+@import "third/jquery-ui.min.css";
+
+
+/*/
+//--------------------------------------
+// Typography stylesheets
+//--------------------------------------
+/*/
+@import "typography/font-families.css";
+@import "typography/font-rules.css";
+
+
+/*/
+//--------------------------------------
+// Components stylesheets
+//--------------------------------------
+/*/
+@import "components/buttons.css";
+@import "components/images.css";
+@import "components/forms.css";
+@import "components/modules.css";
+@import "components/decorative-el.css";
+
+
+/*/
+//--------------------------------------
+// Layouts stylesheets
+//--------------------------------------
+/*/
+@import "layouts/callback.css";
+@import "layouts/site-header.css";
+@import "layouts/popup.css";
+@import "layouts/intro.css";
+@import "layouts/navigation.css";
+@import "layouts/working.css";
+@import "layouts/aboutAndBenefits.css";
+@import "layouts/our-clients.css";
+@import "layouts/gallery.css";
+@import "layouts/formats.css";
+@import "layouts/calculation.css";
+@import "layouts/site-footer.css";
+
+ 
+
+ 
+
+ 
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+/* Begin reset $Box-model */ 
+* {
+  margin  : 0;
+  padding : 0;
+  
+  -webkit-box-sizing : border-box;
+     -moz-box-sizing : border-box;
+          box-sizing : border-box;
+}
+/* End reset $Box-model */
+
+
+/* Begin reset $Text-styles */ 
+h1, h2, h3, h4, h5, h6, p {
+  font-weight : normal;
+  font-size   : 100%;
+}
+/* End reset $Text-styles */
+
+
+/* Begin reset $Other */ 
+ul  { list-style      : none; }
+a   { text-decoration : none; }
+img { border          : 0;    }
+/* End reset $Other */
+
+
+ 
+
+/*------------------------------------*\
+    $GLOBAL-SETTINGS
+\*------------------------------------*/
+
+/* Begin $Layout-declarations */ 
+body {
+  max-width : 1600px;
+  margin    : 0 auto;
+}
+
+.container {
+  width  : 1021px;
+  margin : 0 auto;
+}
+/* End $Layout-declarations */
+
+.is-hidden {
+  display : none;
+}
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,269 @@
+/*
+
+
+[ SITE-HEADER ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    site-header.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure..................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $Container..................The space is above the blocks.
+    [2] $First-block................The block is floated to the left side.
+    [3] $Second-block...............The block is floated to the right side.
+
+  * $MINOR-COMPONENTS
+    [4] $Wrapper-logotype...........This wrapper is floated to the left side.
+    [5] $Wrapper-email..............This wrapper is floated to the right side.
+    [6] $Wrapper-bell...............This wrapper is floated to the left side and also 
+                                    it has a wrapper-popup for a popup inside.
+
+    [7] $Wrapper-popup..............This wrapper has fixed position (all other 
+                                    stylesheets for the popup are in another file).
+
+    [8] $Wrapper-phone..............This wrapper is displayed by property inline-block.
+    [9] $Wrapper-call...............This wrapper is floated to the right side.
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* HEADER-SITE 
+  + CONTAINER 
+    + FIRST-BLOCK
+      + wrapper-logotype 
+        - logotype 
+      + wrapper-email
+        - email 
+    + SECOND-BLOCK
+      + wrapper-bell
+        + bell / .bell
+          - wrapper-popup 
+      + wrapper-phone 
+        - phone
+      + wrapper-call
+        - call
+
++-----------------------------------------+
+|               HEADER-SITE               |
+|  +-----------------------------------+  |
+|  |             CONTAINER             |  |
+|  | +--------------+ +--------------+ |  |
+|  | |  FIRST-BLOCK | | SECOND-BLOCK | |  |
+|  | +--------------+ +--------------+ |  |
+|  +-----------------------------------+  |
++-----------------------------------------+
+
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Container */
+.header-site .container {
+  padding-top : 25px; /* [1] */
+}
+
+  /* $First-block */
+  .header-site .first-block {
+    width : 540px;
+    float : left; /* [2] */
+  }
+
+  /* $Second-block */
+  .header-site .second-block {
+    width      : 455px;
+    float      : right; /* [3] */
+    margin-top : 15px;
+  }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Wrapper-logotype */
+.wrapper-logotype {
+  width : 310px;
+  float : left; /* [4] */
+}
+
+  .logotype {
+    width : 290px;
+  }
+
+    .logotype__picture {
+      width : 134px;
+      float : left;
+    }
+
+    .logotype__title {
+      float      : right;
+      margin-top : 15px;
+    }
+
+
+
+
+/* $Wrapper-email */
+.wrapper-email {
+  width      : 230px;
+  float      : right; /* [5] */
+  margin-top : 15px;
+}
+
+  .email {
+    width : 220px;
+  }
+
+    .email__icon {
+      width : 30px;
+      float : left;
+    }
+
+    .email__link {
+      float      : right;
+      display    : block;
+      margin-top : -7px;
+      cursor     : pointer;
+    }
+
+    .email__text {
+      float        : right;
+      margin-right : 2px;
+    }
+
+
+
+
+/* $Wrapper-bell */
+.wrapper-bell {
+  width  : 50px;
+  float  : left; /* [6] */
+  cursor : pointer;
+}
+
+  .bell {
+    width : 40px;
+  }
+
+    .bell__icon {
+      width   : 30px;
+      display : block;
+    }
+
+    .bell__scope {
+      position : relative;
+      bottom   : 38px;
+      right    : -20px;
+
+      padding  : 0px 6px 2px 6px;
+
+      -webkit-border-radius : 7px;
+         -moz-border-radius : 7px;
+              border-radius : 7px;
+
+      background-color : red;        
+    }
+
+    /* $Wrapper-popup */
+    .wrapper-popup {
+      position : fixed; /* [7] */
+      top      : 85px;
+      z-index  : 99;
+
+      margin-left : -5px;
+    }
+
+
+
+
+/* $Wrapper-phone */
+.wrapper-phone {
+  width   : 250px;
+  display : inline-block; /* [8] */
+}
+
+  .phone {
+    width : 235px;
+  }
+
+    .phone__icon {
+      width       : 30px;
+      float       : left;
+      margin-left : 8px;
+    }
+
+    .phone__number {
+      float : right;
+    }
+
+    .phone__text {
+      float : right;
+    }
+
+
+
+
+/* $Wrapper-call */
+.wrapper-call {
+  width      : 146px;
+  float      : right; /* [9] */
+  margin-top : -10px;
+}
+
+  .call {
+    width : 146px;
+  }
+
+  .call__text {
+    padding-top : 10px;
+  }
+
+  .call__button  {
+    width  : 145px;
+    height : 35px;
+
+    cursor     : pointer;
+    border     : 1px solid orange;
+    background : transparent;
+    
+    -webkit-border-radius : 68px;
+       -moz-border-radius : 68px;
+            border-radius : 68px;
+  }

@@ -1,0 +1,50 @@
+ 
+
+
+/*------------------------------------*\
+    $DECORATIVE-FONTS 
+\*------------------------------------*/
+
+
+@font-face {
+  font-family : Exo2_Light;
+  src         : url( "../../fonts/Exo_2/Exo2-Light.ttf" );
+}
+
+@font-face {
+  font-family : Exo2_Bold;
+  src         : url( "../../fonts/Exo_2/Exo2-Bold.ttf" );
+}
+
+
+
+
+/*------------------------------------*\
+    $BASIC-FONTS 
+\*------------------------------------*/
+
+
+@font-face {
+  font-family : Open_Sans_ExtraBold;
+  src         : url( "../../fonts/Open_Sans/OpenSans-ExtraBold.ttf" );
+}
+
+@font-face {
+  font-family : Open_Sans_Semibold;
+  src         : url( "../../fonts/Open_Sans/OpenSans-Semibold.ttf" );
+}
+
+@font-face {
+  font-family : Open_Sans_Bold;
+  src         : url( "../../fonts/Open_Sans/OpenSans-Bold.ttf" );
+}
+
+@font-face {
+  font-family : Open_Sans_Regular;
+  src         : url( "../../fonts/Open_Sans/OpenSans-Regular.ttf" );
+}
+
+@font-face {
+  font-family : Open_Sans_Light;
+  src         : url( "../../fonts/Open_Sans/OpenSans-Light.ttf" );
+}

@@ -1,0 +1,573 @@
+/*
+
+
+[ FONTS-RULES ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    font-rules.css
+Description:    Rules for fonts.
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $Name ).
+
+  * $FAMILY
+    [1] $Exo2_Light
+    [2] $Exo2_Bold
+    [3] $Open_Sans_Light
+    [4] $Open_Sans_ExtraBold
+    [5] $Open_Sans_Bold
+    [6] $Open_Sans_Regular 
+
+  $DISPLAYING
+    [7] $Transform
+    [8] $Align
+    [9] $Other
+
+  $COLOR
+    [10] $White
+    [11] $Black
+    [12] $Orange
+    [13] $Gray
+
+  $SIZE
+    [14] H2
+    [15] H3
+
+  $SECTIONS
+    $Header-site
+    $Popup 
+    $Intro 
+    $Navigation
+    $Benefits
+    $Working
+    $Our-clients
+    $Gallery
+    $Formats
+    $Calculation
+    $About
+    $Decorative-elements
+    $Modules
+
+    
+*/
+
+
+
+
+/*------------------------------------*\
+    $FAMILY
+\*------------------------------------*/
+
+/* $Exo2_Light */
+.header-site,
+.header-site .offset-text { 
+  font-family: Exo2_Light; /* [1] */
+}
+
+/* $Exo2_Bold */
+.bell__scope,
+.popup__title { 
+  font-family: Exo2_Bold; /* [2] */
+ }
+
+/* $Open_Sans_Light */
+body,  
+.offset-text,
+.contacts__title,
+.coverage-area__title { 
+  font-family: Open_Sans_Light; /* [3] */
+}
+
+/* $Open_Sans_ExtraBold */
+h2,
+.headlines__title,
+.calculation .third-block label,
+.footer-site .offset-text {
+  font-family: Open_Sans_ExtraBold; /* [4] */
+}
+
+/* $Open_Sans_Bold */
+.services__title,
+.dashed-toggle,
+.menu__item-last { 
+  font-family: Open_Sans_Bold; /* [5] */
+}
+
+/* $Open_Sans_Regular */
+.benefits p,
+.about p,
+.textarea label,
+.decorative-circle,
+.stages-processes__text,
+.stages-processes__text .offset-text,
+.footer-site { 
+  font-family: Open_Sans_Regular; /* [6] */
+}
+
+
+
+
+/*------------------------------------*\
+    $DISPLAYING
+\*------------------------------------*/
+
+/* $Transform */
+h1, h2, h3, 
+.services__title,
+.menu__link,
+.total-sum__text,
+.calculation .third-block label  {
+  text-transform : uppercase; /* [7] */
+}
+
+.logotype__title-secondary,
+.popup__title,
+.gallery h3,
+.formats__format-main-title {
+  text-transform : none;
+}
+
+/* $Align */
+.call__text,
+.intro,
+.working,
+.decorative-circle,
+.module-small-form,
+.gallery h3,
+.formats h2,
+.format__title,
+.format__main-title,
+.calculation h2,
+.calculation p,
+.calculation .second-block label,
+.calculation .third-block,
+.coverage-area {
+  text-align: center; /* [8] */
+}
+
+.total-sum__text {
+  text-align: left;
+}
+
+/* $Other */
+.decor-text  { 
+  border-bottom  : 3px solid orange; 
+  padding-bottom : 12.5px; 
+}
+
+.offset-text { 
+  display : block; /* [9] */
+} 
+
+
+
+/*------------------------------------*\
+    $COLOR
+\*------------------------------------*/
+
+/* $White */
+.header-site,
+.intro,
+.benefits,
+.about,
+.button-small,
+.button-big,
+.button-normal,
+.is-activated,
+.benefits .decor-text, 
+.about    .decor-text { 
+  color : white; /* [10] */
+}
+
+/* $Black */
+.services__title,
+.popup,
+.menu__link,
+.bottom label { 
+  color : black; /* [11] */
+}
+
+/* $Orange */
+.callback-button,
+.popup__button,
+.color-text,
+.is-deactivated,
+.dashed-toggle__button,
+.total-sum__big-number,
+.benefits .decorative-circle,
+.clients .offset-text span:last-child  {
+  color : orange; /* [12] */
+}
+ 
+ /* $Gray */
+.popup__message-date,
+.stages-processes__column-wrapper,
+.stages-processes__text,
+.formats__format-main-title,
+.formats__format-main-text,
+fieldset,
+textarea {
+  color: gray; /* [13] */
+}
+
+.decorative-pipeline { 
+  color : #cac;
+}
+
+.min,
+.max { 
+  color: #898; 
+}
+
+.total-sum__text {
+  text-shadow : 
+    -0   -1px 1px #D8D8D8,
+     0   -1px 1px #D8D8D8,
+    -0    1px 1px #D8D8D8,
+     0    1px 1px #D8D8D8,
+    -1px -0   1px #D8D8D8,
+     1px -0   1px #D8D8D8,
+    -1px  0   1px #D8D8D8,
+     1px  0   1px #D8D8D8,
+    -1px -1px 1px #D8D8D8,
+     1px -1px 1px #D8D8D8,
+    -1px  1px 1px #D8D8D8,
+     1px  1px 1px #D8D8D8,
+    -1px -1px 1px #D8D8D8,
+     1px -1px 1px #D8D8D8,
+    -1px  1px 1px #D8D8D8,
+     1px  1px 1px #D8D8D8;
+}
+
+
+
+
+/*------------------------------------*\
+    $SIZE
+\*------------------------------------*/
+
+body h2 { font-size: 27px; } /* [14] */
+body h3 { font-size: 23px; } /* [15] */
+
+
+
+
+/*------------------------------------*\
+    $SECTIONS
+\*------------------------------------*/
+
+/* $Header-site */
+.logotype__title {
+  font-size      : 13px;
+  letter-spacing : -0.3px;
+}
+
+.logotype__title-secondary {
+  font-size      : 16px;
+  letter-spacing : 0.1px;
+}
+
+.email__link {
+  font-size      : 21px;
+  letter-spacing : 0.5px;
+}
+
+.email__text {
+  font-size      : 12.7px;
+  letter-spacing : -0.1px;
+}
+
+.phone__text {
+  font-size      : 12.7px;
+  letter-spacing : -0.2px;
+}
+
+.call__text {
+  font-size      : 12.7px;
+  letter-spacing : -0.2px;
+}
+
+.bell__scope {
+  font-size : 12px;
+}
+
+.phone__number {
+  font-size      : 23px;
+  letter-spacing : -0.2px;
+  line-height    : 25px;
+}
+
+.call__button  {
+  font-size      : 13px;
+  letter-spacing : 0.4px;    
+  color          : orange; 
+}
+
+
+
+
+/* $Popup */
+.popup__title { 
+  font-size  : 15px; 
+  text-align : left !important;
+}
+
+.popup__date { 
+  font-size  : 12px; 
+}
+
+.popup__text { 
+  font-size : 13px !important; 
+}
+
+.button-small { 
+  font-size : 13px; 
+}
+
+.popup__button {
+  font-size   : 15px;
+  font-weight : bold;
+}  
+
+
+
+
+/* $Intro */
+.headlines__title-primary {
+  font-size      : 36px;
+  letter-spacing : 1.5px;
+}
+
+.headlines__title {
+  font-size : 24px;
+  color     : white;
+}
+
+.headlines__text {
+  font-size      : 20px;
+  letter-spacing : -0.5px;
+  line-height    : 25px;
+  color          : white;
+}
+
+.services__title {
+  font-size : 15px;
+  color     : black;
+}
+
+.services__item {
+  line-height : 27px;
+}
+
+
+
+
+/* $Navigation */
+.menu__item {
+  font-size : 14px; 
+}
+
+
+
+
+/* $Benefits */
+.paragraph__text {
+  font-size   : 14px;
+  line-height : 24px;
+}
+
+
+
+
+/* $Working */
+.working h2 {
+  letter-spacing : 0.4px;
+  line-height: 40px;
+}
+
+.work-scheme__text {
+  font-size  : 21px;     
+}
+
+.dashed-toggle__button {  
+  font-size   : 18px;
+  line-height : 30px;
+}
+
+.total-sum__section {
+  font-size : 42px; 
+}
+
+.total-sum__text {
+  font-size      : 12px;
+  letter-spacing : 0.3px;
+  line-height    : 15.3px;
+}
+
+.stages-processes__stage {
+  font-weight : bold;
+  color       : #b8b8b8;
+}
+
+.stages-processes__text {
+  font-size   : 13px;
+  font-weight : bold;
+}
+
+
+
+
+/* $Our-clients */
+.our-clients__title {
+  letter-spacing : 0.4px; 
+}
+
+
+
+
+/* $Gallery */
+.gallery h2 {
+  letter-spacing : 0.4px;
+}
+
+.gallery h3 {
+  font-size : 23px;
+}
+
+.control-panel__title {
+  font-size : 18px;
+}
+
+.control-panel__text {
+  font-size : 14px;
+}
+
+
+
+
+/* $Formats */
+.format__title {
+  font-size      : 16px; 
+  letter-spacing : 0.7px;
+}
+
+.format__main-title {
+  font-size : 14px; 
+}
+
+.format__main-text {
+  font-size   : 13px;
+  line-height : 22px;
+}
+
+
+
+
+/* $Calculation */
+.calculation h2 {
+  letter-spacing: 0.7px;
+  line-height: 40px;
+} 
+
+.calculation p { line-height: 21px; } 
+.big-form      { font-size: 14px; }
+
+.calculation .second-block label { 
+
+}
+
+textarea {
+  font-size: 12px;
+  line-height: 15px;
+  font-style: italic;
+}
+
+.button-big {
+  font-size: 21px;
+  letter-spacing: -0.1px;
+  cursor: pointer;
+}
+
+.calculation .third-block label { font-size: 19px; }
+
+
+
+
+/* $About */
+.about-article__title {
+  letter-spacing : 0.7px; 
+} 
+
+.content__text {
+  font-size   : 14px;
+  line-height : 21px;
+}
+
+
+
+
+/* $Decorative-elements */
+.decorative-closer__cross {
+  font-size   : 30px;
+  line-height : 100%;
+  text-align  : center;
+  color       : white; 
+}
+
+.decorative-circle {
+  font-size   : 21px;
+  line-height : 55px;
+} 
+
+.decorative-plus {
+  font-size   : 24px;
+  font-weight : bold;
+}
+
+
+
+
+/* $Modules */
+.module-small-form__title { 
+  font-size      : 23px;
+  letter-spacing : -0.8px;
+  text-align     : center;
+}
+
+.module-small-form__text {
+  line-height    : 24px;
+  letter-spacing : -0.3px;
+  color          : white;
+}
+
+.module-small-form__input {
+  font-size : 14px;
+  color     : white;
+}
+
+.module-small-form__submit {
+  font-size : 20px;
+}
+
+.module-small-form__footer-text {
+  font-size      : 14px;
+  line-height    : 21px;
+  letter-spacing : -0.2px;
+  color          : white;
+}

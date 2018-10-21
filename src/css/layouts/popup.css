@@ -1,0 +1,165 @@
+/*
+
+
+[ POPUP ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    popup.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure...................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $Popup.......................The popup has fixed width which has 470px.
+    [2] $Popup:after.................This is a decorative corner and it has
+                                     absolute position.
+
+  * $MINOR-COMPONENTS
+    [3] $Popup__section..............The wrapper is floated to the right side.
+    [4] $Popup__message..............The wrapper is floated to the right side.
+    [5] $Popup__button...............The button has width all 100%.
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* POPUP 
+  + POPUP_SECTION
+    - popup__icon
+    + popup__message
+      - popup__title
+      - popup__date
+      - popup__text
+      - button-small
+    - popup__button
+
++-------------------------+
+|          POPUP          |        
+|  +-------------------+  |
+|  |   POPUP_SECTION   |  |         
+|  +-------------------+  |
++-------------------------+
+
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Popup */
+.popup {
+  width : 470px; /* [1] */
+  background-color : white;
+}
+
+/* $Popup:after */
+.popup:after {
+    content  : "";
+    position : absolute; /* [2] */
+    top      : -5px;
+    left     : 15px;
+    z-index  : 99;
+
+    display  : block;
+    width    : 0;
+
+    -webkit-transform : rotate(135deg);
+       -moz-transform : rotate(135deg);
+        -ms-transform : rotate(135deg);
+         -o-transform : rotate(135deg);
+            transform : rotate(135deg);
+
+    border-width : 0 10px 10px 0;
+    border-style : solid;
+    border-color : white;
+}
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Popup__section */
+.popup__section {
+  width   : 100%;
+  float   : right; /* [3] */
+  padding : 12.5px 0px 12.5px 12.5px;
+
+  border-bottom : 1px solid #ddd;
+}
+
+  .popup__icon {
+    width : 60px !important;
+  }
+  
+  /* $Popup__message */
+  .popup__message {
+    width : 380px;
+    float : right; /* [4] */
+
+    padding-left : 6.2px;
+    margin-right : 10px;
+  }
+
+    .popup__date { 
+      float      : left;
+      margin-top : 2.5px;
+    }
+ 
+    .popup__text { 
+      float     : left;
+      margin    : 2.5px 0px 10px 0px;
+    }
+
+
+
+
+/* $Popup__button */
+.popup__button {
+  width   : 100%; /* [5] */
+  display : block;
+  padding : 8px;
+
+  border  : none;
+  cursor  : pointer;
+  clear   : both;
+
+  background-color : transparent;
+}    
+
+
+
+
+
+ 

@@ -1,0 +1,192 @@
+/*
+
+
+[ CALCULATION ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    calculation.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure.....................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $Wrapper-big-form..............The wrappers are centered by margin auto to 
+                                       horizontally center. 
+                                       
+    [2] $First-block...................The first-block is floated to the left side.
+    [3] $Second-block..................The second-block is floated to the right side.
+
+  * $MINOR-COMPONENTS
+    [4] $Choose........................It has cleared both sides.
+    [5] $Container-fields..............The container is floated to the right side.
+    [6] $Phone-email...................The phone and number are floated to the left side.
+    [7] $Label-range...................The label-range has relative position.
+    [8] $Submit........................The submit are centered by margin auto to 
+                                       horizontally center. 
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* CALCULATION
+  + CONTAINER 
+    + WRAPPER-BIG-FORM
+      + big-form
+        + first-block
+          - choose-city
+          - choose-vehicle
+          - choose-size
+          - own-data
+        + second-block
+        + third-block
+
++----------------------------+
+|         CALULATION         |
+|  +----------------------+  |
+|  |       CONTAINER      |  |
+|  | +------------------+ |  |
+|  | | WRAPPER-BIG-FORM | |  |
+|  | +------------------+ |  |
+|  +----------------------+  |
++----------------------------+
+ 
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+.calculation {
+  padding : 50px 0px;
+  clear   : both;
+
+  background-color : white;
+}
+
+  .calculation h2 {
+    padding-bottom: 25px;
+  } 
+
+  .calculation p {
+    width  : 43%;
+    margin : 0 auto;  
+  } 
+
+  .wrapper-big-form {
+    width    : 95%;
+    margin   : 25px auto 0px auto; /* [1] */
+    border   : 4px solid orange;
+    overflow : hidden;
+  } 
+
+    .big-form {
+      padding : 20px 60px;
+    }
+
+      .calculation .first-block {
+        width : 550px;
+        float : left; /* [2] */
+
+        padding-bottom : 40px;
+      }
+
+      .calculation .second-block {
+        width      : 260px;
+        float      : right; /* [3] */
+        margin-top : 178px;
+      }
+
+      .calculation .third-block {
+        padding-bottom : 25px;
+        clear          : both;
+      }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+.choose-city,
+.choose-vehicle,
+.choose-size,
+.own-data {
+  padding       : 30px 0;
+  clear         : both;
+  overflow      : hidden; /* [4] */
+  border-bottom : 1px dashed #DBDBDB;
+
+}
+
+.own-data  {
+  padding-bottom : 0px; 
+  border-bottom  : 0; 
+}
+
+  .container-fields {
+    width : 470px;
+    float : right; /* [5] */
+  }
+
+
+    .name-and-phone { 
+      margin-right : 20px; 
+    }
+
+    .name-and-phone,
+    .company-and-email {
+      width: 225px;
+      float: left; /* [6] */
+    }
+
+      .label-range {
+        position : relative; /* [7] */
+        left     : -335px;
+        top      : -32px;
+      }
+
+.calculation .submit {
+  margin : 0 auto; /* [8] */
+}
+
+
+
+
+
+
+
+
+
+
+

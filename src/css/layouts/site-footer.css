@@ -1,0 +1,171 @@
+/*
+
+
+[ SITE-FOOTER ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    site-footer.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure..................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $First-block................The wrapper has relative position and clear both side.
+
+  * $MINOR-COMPONENTS
+    [2] $Wrapper-map................The wrapper has absolute position because 
+                                    it helps to display a map correctly.
+                                    
+    [3] $Map........................The map stretches to all height of the wrapper.
+    [4] $Wrapper-contacts...........The wrapper is floated to the right side.
+    [5] $Coverage-area..............The height of the structure is 720px.
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* HEADER-SITE 
+  + CONTAINER 
+    + FIRST-BLOCK
+      + wrapper-map
+        - map
+      + wrapper-contacts
+        - contacts 
+    + SECOND-BLOCK
+      - coverage-area
+
+
++-------------------------+
+|       FOOTER-SITE       |        
+|  +-------------------+  |
+|  |     CONTAINER     |  |         
+|  | +---------------+ |  |
+|  | |  FIRST-BLOCK  | |  |
+|  | +---------------+ |  | 
+|  | +---------------+ |  | 
+|  | |  SECOND-BLOCK | |  |
+|  | +---------------+ |  |
+|  +-------------------+  |
++-------------------------+
+
+
+*/
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+.footer-site {
+  background-color : rgb(237, 238, 240);
+}
+
+  /* $First-block */
+  .footer-site .first-block {
+    position   : relative; /* [1] */
+    overflow   : hidden;
+    clear      : both;
+  }
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Wrapper-map */
+.wrapper-map {
+  position : absolute; /* [2] */
+  width    : 50%;
+  height   : 100%;
+}
+
+  /* $Map */
+  .map {
+    width  : 100%;
+    height : 100%; /* [3] */
+  }
+
+
+/* $Wrapper-contacts */
+.wrapper-contacts {
+  width   : 50%;
+  float   : right; /* [4] */
+  padding : 50px;
+  background-color : #EDEEF0;
+}
+
+  .contacts__section {
+    margin-top : 50px;
+  }
+
+    .contacts__icon {
+      width : 15px;
+      float : left;
+    }
+
+    .contacts__icon-email {
+      width      : 20px;
+      margin-top : 5px;
+    }
+
+    .contacts__text {
+      width        : 460px;
+      padding-left : 36px;
+    }
+
+    .contacts__link {
+      margin-left : 16px;
+    }
+
+
+/* $Coverage-area */
+.coverage-area {
+  height : 720px; /* [5] */
+  clear  : both;
+}
+
+  .coverage-area__title {
+    padding-top : 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+

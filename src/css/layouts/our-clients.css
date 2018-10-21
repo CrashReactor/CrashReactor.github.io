@@ -1,0 +1,122 @@
+/*
+
+
+[ OUR-CLIENTS ]
+
+Project:        Golden Media Group ( G.M.G. )
+Primary use:    Landing page
+
+File's name:    our-clients.css
+Description:    Layout settings
+Version:        1.1
+Created:        04/06/2018
+Last change:    [ none ]
+
+Creator:        Antocha
+IM:             contactme69 
+Email:          myemail@contact.com
+Spec:           https://www.linkwebpage.com
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Table of contents ]
+
+You can use searching by keyword( $UPPER, $low, and [number] ).
+
+  * LAYOUT
+    Page Structure.................The major & minor scheme of the module.
+
+  * $MAJOR-COMPONENTS
+    [1] $Our-clients__labels.......It has width on 100%.
+ 
+  * $MINOR-COMPONENTS
+    [2] $Our-clients__slot.........The slots are floated to the left side.
+    [3] $Our-clients__label........Each label is floated to the right and 
+                                   has margin to the right on 24px but the 
+                                   last label has 0px.
+    [4] $Our-clients__label-last
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+[ Layout ]
+
+Major components: UPPER case
+Minor components: lower case
+
+* OUR-CLIENTS 
+  + CONTAINER 
+    + OUR-CLIENTS__TITLE 
+    + OUR-CLIENTS__LABELS
+      - our-clients__slot
+      - our-clients__slot-last
+
++-------------------------------+
+|          OUR-CLIENTS          |
+|  +-------------------------+  |
+|  |        CONTAINER        |  |
+|  | +---------------------+ |  |
+|  | | OUR-CLIENTS__TITLE  | |  |
+|  | +---------------------+ |  |
+|  | +---------------------+ |  |
+|  | | OUR-CLIENTS__LABELS | |  |
+|  | +---------------------+ |  |
+|  +-------------------------+  |
++-------------------------------+
+
+
+*/ 
+
+
+
+
+/*------------------------------------*\
+    $MAJOR-COMPONENTS
+\*------------------------------------*/
+
+/* $Our-clients__labels */
+.our-clients {
+  padding : 50px 0px;
+  clear   : both;
+  
+  background-color : white;
+}
+
+	.clients-labels {
+	  overflow : hidden;
+	}
+
+
+
+
+/*------------------------------------*\
+    $MINOR-COMPONENTS
+\*------------------------------------*/
+
+.clients-labels__title {
+  padding-bottom: 50px;
+}
+
+.clients-labels__slot {
+  display    : block;
+  float      : left; /* [2] */
+  margin-top : 25px;
+}
+
+	.clients-labels__label {
+	  width        : 150px;
+	  display      : block;
+	  float        : left; 
+	  margin-right : 24px; /* [3] */
+	}
+
+	.clients-labels__label-last {
+	  margin-right : 0px; /* [4] */
+	}
+
+
